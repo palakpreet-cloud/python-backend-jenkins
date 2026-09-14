@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('git'){
             steps{
-                git url: 'https://github.com/palakpreet-cloud/python-backend.git', branch: 'main'
+                git url: 'https://github.com/palakpreet-cloud/python-backend-jenkins.git', branch: 'main', , credentialsId: 'pythonbackendjenkinsfile'
             }
         }
         stage('venv'){
